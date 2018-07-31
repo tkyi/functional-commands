@@ -1,0 +1,9 @@
+namespace: screwdriver-cd-test
+name: binary-test
+description: |
+   Test command for binary format
+maintainer: foo@example.com
+version: "1.0"
+format: binary
+binary:
+    file: ./test.sh

@@ -1,0 +1,11 @@
+namespace: screwdriver-cd-test
+name: habitat-test
+description: |
+   Test command for habitat format
+maintainer: foo@example.com
+version: "1.0"
+format: habitat
+habitat:
+    package: core/node8
+    mode: remote
+    command: node
