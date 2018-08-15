@@ -23,4 +23,4 @@ jobs:
   promote:
     steps:
       - promote: sd-cmd promote screwdriver-cd-test/promote-test 1.0.1 stable
-      - release: sd-cmd promote screwdriver-cd-test/promote-test stable release
+      - release: sd-cmd promote screwdriver-cd-test/promote-test stable GA
