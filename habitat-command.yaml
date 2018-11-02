@@ -1,5 +1,5 @@
 namespace: screwdriver-cd-test
-name: habitat-test
+name: habitat-func-test
 description: |
    Test command for habitat format
 maintainer: foo@example.com

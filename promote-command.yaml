@@ -1,5 +1,5 @@
 namespace: screwdriver-cd-test
-name: promote-test
+name: promote-func-test
 description: |
    Test command for promote
 maintainer: foo@example.com

@@ -1,5 +1,5 @@
 namespace: screwdriver-cd-test
-name: binary-test
+name: binary-func-test
 description: |
    Test command for binary format
 maintainer: foo@example.com
