@@ -5,12 +5,12 @@ jobs:
   binary:
     steps:
       - publish: sd-cmd publish -f binary-command.yaml
-      - exec: sd-cmd exec screwdriver-cd-test/binary-test@1 foo bar
+      - exec: sd-cmd exec screwdriver-cd-test/binary-func-test@1 foo bar
 
   habitat:
     steps:
       - publish: sd-cmd publish -f habitat-command.yaml
-      - exec: sd-cmd exec screwdriver-cd-test/habitat-test@1 -v
+      - exec: sd-cmd exec screwdriver-cd-test/habitat-func-test@1 -v
 
   publish-stable:
     steps:
@@ -22,5 +22,5 @@ jobs:
 
   promote:
     steps:
-      - promote: sd-cmd promote screwdriver-cd-test/promote-test 1.0.1 stable
-      - release: sd-cmd promote screwdriver-cd-test/promote-test stable GA
+      - promote: sd-cmd promote screwdriver-cd-test/promote-func-test 1.0.1 stable
+      - release: sd-cmd promote screwdriver-cd-test/promote-func-test stable GA
