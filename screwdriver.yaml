@@ -5,7 +5,9 @@ jobs:
   binary:
     steps:
       - publish: sd-cmd publish -f binary-command.yaml
-      - exec: sd-cmd exec screwdriver-cd-test/binary-func-test@1 foo bar
+      # default pipe size: 64KB (65536)
+      # see http://man7.org/linux/man-pages/man7/pipe.7.html
+      - exec: dd if=/dev/zero bs=65537 count=1 | sd-cmd exec screwdriver-cd-test/binary-func-test@1 foo bar
 
   habitat:
     steps:
